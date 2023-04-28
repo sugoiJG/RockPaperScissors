@@ -12,7 +12,6 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   userChoiceDisplay.innerHTML = userChoice
   generateComputerChoice()
   getResult()
-
 }))
 
 function generateComputerChoice() {
@@ -30,9 +29,6 @@ function generateComputerChoice() {
 }
 
 const getResult = () => {
-  if (computerChoice === userChoice) {
-    result = "It's a draw!"
-  }
   if (computerChoice === 'rock' && userChoice === "paper") {
     result = 'You won!'
   }
@@ -50,6 +46,9 @@ const getResult = () => {
   }
   if (computerChoice === 'scissors' && userChoice === 'paper') {
     result === 'You lost!'
+  }
+  else if (computerChoice === userChoice) {
+    result = "It's a draw!"
   }
   resultDisplay.innerHTML = result;
 }

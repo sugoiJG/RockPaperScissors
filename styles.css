@@ -1,0 +1,54 @@
+/* Apply some basic styling to the page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+/* Style the buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Style the computer and user choice headings */
+h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* Style the result heading */
+#result {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Style the result text based on the outcome */
+#result.win {
+    color: green;
+}
+
+#result.lose {
+    color: red;
+}
+
+#result.tie {
+    color: blue;
+}
